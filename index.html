@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>relatos del día de un niño de 11 años</title>
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --panel:#ffffff;
+      --txt:#111827;
+      --muted:#6b7280;
+      --line:rgba(17,24,39,.12);
+      --shadow: 0 12px 30px rgba(17,24,39,.10);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;
+      background:
+        radial-gradient(1200px 700px at 20% 0%, rgba(59,130,246,.10) 0%, rgba(59,130,246,0) 55%),
+        radial-gradient(1000px 700px at 85% 10%, rgba(168,85,247,.10) 0%, rgba(168,85,247,0) 55%),
+        var(--bg);
+      color:var(--txt);
+    }
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 46px}
+    header{
+      display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
+      padding:18px 18px 10px;
+      background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.55));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    h1{margin:0;font-size: clamp(22px, 2.4vw, 34px);letter-spacing:.2px;text-transform:lowercase}
+    .hint{margin:0;color:var(--muted);font-size:14px}
+
+    /* galería fija: 4 por fila SIEMPRE */
+    .gallery{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap:16px;
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,.92));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      overflow:hidden;
+      box-shadow: var(--shadow);
+      transform: translateZ(0);
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+      min-width:0;
+    }
+    .card:hover{
+      transform: translateY(-3px) scale(1.01);
+      border-color: rgba(59,130,246,.35);
+      box-shadow: 0 16px 38px rgba(17,24,39,.14);
+    }
+    .thumb{position:relative;width:100%;aspect-ratio:16/9;background: rgba(17,24,39,.04);overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .meta{padding:12px 12px 14px}
+    .title{margin:0;font-size:14px;line-height:1.2;color:var(--txt);text-transform:lowercase}
+    a{color:inherit;text-decoration:none}
+    .badge{
+      display:inline-block;margin-top:8px;padding:4px 8px;border-radius:999px;font-size:12px;
+      color:var(--muted);border:1px solid rgba(17,24,39,.12);background: rgba(17,24,39,.03);
+      word-break:break-word;
+    }
+
+    /* si la pantalla es estrecha, mantener 4 por fila con scroll horizontal */
+    @media (max-width: 520px){
+      .wrap{padding:18px 12px 34px}
+      .gallery{overflow-x:auto;padding-bottom:8px}
+      .card{min-width:220px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>relatos del día de un niño de 11 años</h1>
+        <p class="hint">galería (4 por fila). imágenes y archivos enlazados deben estar en esta misma carpeta.</p>
+      </div>
+      <p class="hint">archivo: <strong>index.html</strong></p>
+    </header>
+
+    <section class="gallery" aria-label="galería">
+<article class="card">
+        <a href="relato-1-el-despertador-enemigo.html">
+          <div class="thumb"><img src="01-el-despertador-enemigo.jpg" alt="el despertador enemigo"></div>
+          <div class="meta">
+            <p class="title">el despertador enemigo</p>
+            <span class="badge">relato-1-el-despertador-enemigo.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-2-las-mananas-son-para-correr.html">
+          <div class="thumb"><img src="02-las-mananas-son-para-correr.jpg" alt="las mañanas son para correr"></div>
+          <div class="meta">
+            <p class="title">las mañanas son para correr</p>
+            <span class="badge">relato-2-las-mananas-son-para-correr.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-3-el-desayuno-del-heroe.html">
+          <div class="thumb"><img src="03-el-desayuno-del-heroe.jpg" alt="el desayuno del héroe"></div>
+          <div class="meta">
+            <p class="title">el desayuno del héroe</p>
+            <span class="badge">relato-3-el-desayuno-del-heroe.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-4-la-mochila-olvidada.html">
+          <div class="thumb"><img src="04-la-mochila-olvidada.jpg" alt="la mochila olvidada"></div>
+          <div class="meta">
+            <p class="title">la mochila olvidada</p>
+            <span class="badge">relato-4-la-mochila-olvidada.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-5-el-camino-matutino.html">
+          <div class="thumb"><img src="05-el-camino-matutino.jpg" alt="el camino matutino"></div>
+          <div class="meta">
+            <p class="title">el camino matutino</p>
+            <span class="badge">relato-5-el-camino-matutino.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-6-la-fila-interminable.html">
+          <div class="thumb"><img src="06-la-fila-interminable.jpg" alt="la fila interminable"></div>
+          <div class="meta">
+            <p class="title">la fila interminable</p>
+            <span class="badge">relato-6-la-fila-interminable.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-7-el-maestro-nuevo.html">
+          <div class="thumb"><img src="07-el-maestro-nuevo.jpg" alt="el maestro nuevo"></div>
+          <div class="meta">
+            <p class="title">el maestro nuevo</p>
+            <span class="badge">relato-7-el-maestro-nuevo.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-8-el-examen-sorpresa.html">
+          <div class="thumb"><img src="08-el-examen-sorpresa.jpg" alt="el examen sorpresa"></div>
+          <div class="meta">
+            <p class="title">el examen sorpresa</p>
+            <span class="badge">relato-8-el-examen-sorpresa.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-9-el-recreo-de-los-campeones.html">
+          <div class="thumb"><img src="09-el-recreo-de-los-campeones.jpg" alt="el recreo de los campeones"></div>
+          <div class="meta">
+            <p class="title">el recreo de los campeones</p>
+            <span class="badge">relato-9-el-recreo-de-los-campeones.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-10-el-desafio-del-almuerzo.html">
+          <div class="thumb"><img src="10-el-desafio-del-almuerzo.jpg" alt="el desafío del almuerzo"></div>
+          <div class="meta">
+            <p class="title">el desafío del almuerzo</p>
+            <span class="badge">relato-10-el-desafio-del-almuerzo.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-11-la-hora-del-arte.html">
+          <div class="thumb"><img src="11-la-hora-del-arte.jpg" alt="la hora del arte"></div>
+          <div class="meta">
+            <p class="title">la hora del arte</p>
+            <span class="badge">relato-11-la-hora-del-arte.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-12-el-conflicto-en-matematicas.html">
+          <div class="thumb"><img src="12-el-conflicto-en-matematicas.jpg" alt="el conflicto en matemáticas"></div>
+          <div class="meta">
+            <p class="title">el conflicto en matemáticas</p>
+            <span class="badge">relato-12-el-conflicto-en-matematicas.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-13-el-pasillo-de-los-secretos.html">
+          <div class="thumb"><img src="13-el-pasillo-de-los-secretos.jpg" alt="el pasillo de los secretos"></div>
+          <div class="meta">
+            <p class="title">el pasillo de los secretos</p>
+            <span class="badge">relato-13-el-pasillo-de-los-secretos.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-14-el-proyecto-en-grupo.html">
+          <div class="thumb"><img src="14-el-proyecto-en-grupo.jpg" alt="el proyecto en grupo"></div>
+          <div class="meta">
+            <p class="title">el proyecto en grupo</p>
+            <span class="badge">relato-14-el-proyecto-en-grupo.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-15-el-partido-epico.html">
+          <div class="thumb"><img src="15-el-partido-epico.jpg" alt="el partido épico"></div>
+          <div class="meta">
+            <p class="title">el partido épico</p>
+            <span class="badge">relato-15-el-partido-epico.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-16-el-castigo.html">
+          <div class="thumb"><img src="16-el-castigo.jpg" alt="el castigo"></div>
+          <div class="meta">
+            <p class="title">el castigo</p>
+            <span class="badge">relato-16-el-castigo.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-17-el-regreso-a-casa-bajo-la-lluvia.html">
+          <div class="thumb"><img src="17-el-regreso-a-casa-bajo-la-lluvia.jpg" alt="el regreso a casa bajo la lluvia"></div>
+          <div class="meta">
+            <p class="title">el regreso a casa bajo la lluvia</p>
+            <span class="badge">relato-17-el-regreso-a-casa-bajo-la-lluvia.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-18-la-merienda-sonada.html">
+          <div class="thumb"><img src="18-la-merienda-sonada.jpg" alt="la merienda soñada"></div>
+          <div class="meta">
+            <p class="title">la merienda soñada</p>
+            <span class="badge">relato-18-la-merienda-sonada.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-19-la-batalla-con-las-tareas.html">
+          <div class="thumb"><img src="19-la-batalla-con-las-tareas.jpg" alt="la batalla con las tareas"></div>
+          <div class="meta">
+            <p class="title">la batalla con las tareas</p>
+            <span class="badge">relato-19-la-batalla-con-las-tareas.html</span>
+          </div>
+        </a>
+      </article>
+<article class="card">
+        <a href="relato-20-las-historias-bajo-la-luna.html">
+          <div class="thumb"><img src="20-las-historias-bajo-la-luna.jpg" alt="las historias bajo la luna"></div>
+          <div class="meta">
+            <p class="title">las historias bajo la luna</p>
+            <span class="badge">relato-20-las-historias-bajo-la-luna.html</span>
+          </div>
+        </a>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
